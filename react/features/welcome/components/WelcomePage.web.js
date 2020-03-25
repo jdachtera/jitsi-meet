@@ -1,5 +1,5 @@
 /* global interfaceConfig */
-
+/* eslint-disable */
 import React from 'react';
 
 import { translate } from '../../base/i18n';
@@ -12,7 +12,7 @@ import { SettingsButton, SETTINGS_TABS } from '../../settings';
 
 import { AbstractWelcomePage, _mapStateToProps } from './AbstractWelcomePage';
 import Tabs from './Tabs';
-
+import { BeeHive } from './BeeHive';
 /**
  * The pattern used to validate room name.
  * @type {string}
@@ -85,7 +85,8 @@ class WelcomePage extends AbstractWelcomePage {
          * @type {HTMLTemplateElement|null}
          */
         this._additionalContentTemplate = document.getElementById(
-            'welcome-page-additional-content-template');
+            'welcome-page-additional-content-template'
+        );
 
         /**
          * The template to use as the additional content for the welcome page header toolbar.
@@ -101,11 +102,13 @@ class WelcomePage extends AbstractWelcomePage {
         // Bind event handlers so they are only bound once per instance.
         this._onFormSubmit = this._onFormSubmit.bind(this);
         this._onRoomChange = this._onRoomChange.bind(this);
-        this._setAdditionalContentRef
-            = this._setAdditionalContentRef.bind(this);
+        this._setAdditionalContentRef = this._setAdditionalContentRef.bind(
+            this
+        );
         this._setRoomInputRef = this._setRoomInputRef.bind(this);
-        this._setAdditionalToolbarContentRef
-            = this._setAdditionalToolbarContentRef.bind(this);
+        this._setAdditionalToolbarContentRef = this._setAdditionalToolbarContentRef.bind(
+            this
+        );
         this._onTabSelected = this._onTabSelected.bind(this);
     }
 
@@ -128,7 +131,8 @@ class WelcomePage extends AbstractWelcomePage {
 
         if (this._shouldShowAdditionalContent()) {
             this._additionalContentRef.appendChild(
-                this._additionalContentTemplate.content.cloneNode(true));
+                this._additionalContentTemplate.content.cloneNode(true)
+            );
         }
 
         if (this._shouldShowAdditionalToolbarContent()) {
@@ -165,33 +169,36 @@ class WelcomePage extends AbstractWelcomePage {
 
         return (
             <div
-                className = { `welcome ${showAdditionalContent
-                    ? 'with-content' : 'without-content'}` }
-                id = 'welcome_page'>
-                <div className = 'welcome-watermark'>
+                className={`welcome ${
+                    showAdditionalContent ? 'with-content' : 'without-content'
+                }`}
+                id='welcome_page'
+            >
+                <div className='welcome-watermark'>
                     <Watermarks />
                 </div>
-                <div className = 'header'>
-                    <div className = 'welcome-page-settings'>
-                        <SettingsButton
-                            defaultTab = { SETTINGS_TABS.CALENDAR } />
-                        { showAdditionalToolbarContent
-                            ? <div
-                                className = 'settings-toolbar-content'
-                                ref = { this._setAdditionalToolbarContentRef } />
-                            : null
-                        }
+                <div className='header'>
+                    <div className='welcome-page-settings'>
+                        <SettingsButton defaultTab={SETTINGS_TABS.CALENDAR} />
+                        {showAdditionalToolbarContent ? (
+                            <div
+                                className='settings-toolbar-content'
+                                ref={this._setAdditionalToolbarContentRef}
+                            />
+                        ) : null}
                     </div>
-                    <div className = 'header-image' />
-                    <div className = 'header-text'>
-                        <h1 className = 'header-text-title'>
-                            { t('welcomepage.title') }
+                    {/*
+                    <div className='header-image' />
+                    <div className='header-text'>
+                        <h1 className='header-text-title'>
+                            {t('welcomepage.title')}
                         </h1>
-                        <p className = 'header-text-description'>
-                            { t('welcomepage.appDescription',
-                                { app: APP_NAME }) }
+                        <p className='header-text-description'>
+                            {t('welcomepage.appDescription', { app: APP_NAME })}
                         </p>
                     </div>
+                    */}
+                    {/*
                     <div id = 'enter_room'>
                         <div className = 'enter-room-input-container'>
                             <div className = 'enter-room-title'>
@@ -222,13 +229,16 @@ class WelcomePage extends AbstractWelcomePage {
                             }
                         </div>
                     </div>
-                    { this._renderTabs() }
+                    */}
+                    {/* this._renderTabs() */}
                 </div>
-                { showAdditionalContent
-                    ? <div
-                        className = 'welcome-page-content'
-                        ref = { this._setAdditionalContentRef } />
-                    : null }
+                <BeeHive />
+                {showAdditionalContent ? (
+                    <div
+                        className='welcome-page-content'
+                        ref={this._setAdditionalContentRef}
+                    />
+                ) : null}
             </div>
         );
     }
@@ -303,9 +313,11 @@ class WelcomePage extends AbstractWelcomePage {
 
         return (
             <Tabs
-                onSelect = { this._onTabSelected }
-                selected = { this.state.selectedTab }
-                tabs = { tabs } />);
+                onSelect={this._onTabSelected}
+                selected={this.state.selectedTab}
+                tabs={tabs}
+            />
+        );
     }
 
     /**
@@ -354,10 +366,12 @@ class WelcomePage extends AbstractWelcomePage {
      * @returns {boolean}
      */
     _shouldShowAdditionalContent() {
-        return interfaceConfig.DISPLAY_WELCOME_PAGE_CONTENT
-            && this._additionalContentTemplate
-            && this._additionalContentTemplate.content
-            && this._additionalContentTemplate.innerHTML.trim();
+        return (
+            interfaceConfig.DISPLAY_WELCOME_PAGE_CONTENT &&
+            this._additionalContentTemplate &&
+            this._additionalContentTemplate.content &&
+            this._additionalContentTemplate.innerHTML.trim()
+        );
     }
 
     /**
@@ -368,10 +382,12 @@ class WelcomePage extends AbstractWelcomePage {
      * @returns {boolean}
      */
     _shouldShowAdditionalToolbarContent() {
-        return interfaceConfig.DISPLAY_WELCOME_PAGE_TOOLBAR_ADDITIONAL_CONTENT
-            && this._additionalToolbarContentTemplate
-            && this._additionalToolbarContentTemplate.content
-            && this._additionalToolbarContentTemplate.innerHTML.trim();
+        return (
+            interfaceConfig.DISPLAY_WELCOME_PAGE_TOOLBAR_ADDITIONAL_CONTENT &&
+            this._additionalToolbarContentTemplate &&
+            this._additionalToolbarContentTemplate.content &&
+            this._additionalToolbarContentTemplate.innerHTML.trim()
+        );
     }
 
     /**
@@ -386,7 +402,6 @@ class WelcomePage extends AbstractWelcomePage {
 
         return innerWidth <= WINDOW_WIDTH_THRESHOLD;
     }
-
 }
 
 export default translate(connect(_mapStateToProps)(WelcomePage));

@@ -12,15 +12,15 @@
 
 /* Mixins BEGIN */
 
-@import "mixins";
+@import 'mixins';
 
 /* Mixins END */
 
 /* Animations END */
 
 /* Flags BEGIN */
-$flagsImagePath: "../images/";
-@import "../node_modules/bc-css-flags/dist/css/bc-css-flags.scss";
+$flagsImagePath: '../images/';
+@import '../node_modules/bc-css-flags/dist/css/bc-css-flags.scss';
 /* Flags END */
 
 /* Modules BEGIN */
@@ -63,7 +63,7 @@ $flagsImagePath: "../images/";
 @import 'components/button-control';
 @import 'components/input-control';
 @import 'components/input-slider';
-@import "connection-info";
+@import 'connection-info';
 @import 'aui-components/dropdown';
 @import '404';
 @import 'policy';
@@ -88,3 +88,91 @@ $flagsImagePath: "../images/";
 @import 'chrome-extension-banner';
 
 /* Modules END */
+
+$beehive-window-size: 250px;
+
+#beehive-wrapper {
+    position: absolute;
+    bottom: 25px;
+    left: calc(50% - #{$beehive-window-size});
+}
+
+#beehive-container {
+    background: #ddd;
+    height: $beehive-window-size * 2;
+    width: $beehive-window-size * 2;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    border-top: solid 1px #fff;
+
+    clip-path: circle(
+        $beehive-window-size at $beehive-window-size $beehive-window-size
+    );
+    filter: drop-shadow(0px 10px 5px rgba(0, 0, 0, 0.1));
+}
+
+#beehive-container:after,
+#beehive-container:before {
+    content: '';
+    display: block;
+    width: 100%;
+    position: absolute;
+    background: white;
+    height: 16px;
+    z-index: 2;
+}
+
+#beehive-container:before {
+    bottom: -16px;
+    box-shadow: 0px -8px 16px rgba(0, 0, 0, 0.3);
+}
+
+#beehive-container:after {
+    top: -16px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+#beehive {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+#beehive-container svg,
+#beehive-container canvas {
+    position: absolute;
+}
+
+.beehive-mesh {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 2px;
+}
+
+.beehive-anchor path {
+    fill: none;
+    pointer-events: all;
+    cursor: pointer;
+}
+
+.beehive-anchor path:hover {
+    stroke: #000;
+    stroke-width: 2px;
+}
+
+.welcome {
+    background: yellow;
+    background-image: url(../images/beehive-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.watermark {
+    width: 300px;
+    height: 410px;
+    background-position: top left;
+}
