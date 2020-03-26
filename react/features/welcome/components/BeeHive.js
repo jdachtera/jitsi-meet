@@ -163,7 +163,7 @@ const renderTheHive = async function() {
                     d &&
                     d.comb &&
                     d.comb.title &&
-                    `https://meet.phoenix-convention.de/${encodeURI(
+                    `${location.origin}${encodeURI(
                         d.comb.title.replace(' ', '')
                     )}`
                 );
