@@ -1,6 +1,7 @@
 export const combs = [
     {
-        title: 'Radial Tidy Tree'
+        title: 'Bee Harem',
+        img: 'https://pbs.twimg.com/media/CX_6lyMWwAAiGQu.jpg'
     },
     {
         title: 'Factorisation Diagrams'
