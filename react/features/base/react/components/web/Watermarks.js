@@ -154,7 +154,7 @@ class Watermarks extends Component<Props, State> {
             if (brandWatermarkLink) {
                 reactElement = (
                     <a
-                        href = { 'https://buzz.beeburn.org' }
+                        href = { 'https://buzz.hiveburn.org' }
                         target = '_self'>
                         { reactElement }
                     </a>
@@ -184,7 +184,7 @@ class Watermarks extends Component<Props, State> {
             if (jitsiWatermarkLink) {
                 reactElement = (
                     <a
-                        href = { 'https://buzz.beeburn.org' }
+                        href = { 'https://buzz.hiveburn.org' }
                         target = '_self'>
                         { reactElement }
                     </a>
