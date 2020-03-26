@@ -13,7 +13,7 @@ declare var interfaceConfig: Object;
  * @private
  */
 const _RIGHT_WATERMARK_STYLE = {
-    backgroundImage: 'url(images/rightwatermark.png)'
+    backgroundImage: 'url(images/watermark.gif)'
 };
 
 /**
@@ -154,8 +154,8 @@ class Watermarks extends Component<Props, State> {
             if (brandWatermarkLink) {
                 reactElement = (
                     <a
-                        href = { brandWatermarkLink }
-                        target = '_new'>
+                        href = { 'https://buzz.beeburn.org' }
+                        target = '_self'>
                         { reactElement }
                     </a>
                 );
@@ -184,8 +184,8 @@ class Watermarks extends Component<Props, State> {
             if (jitsiWatermarkLink) {
                 reactElement = (
                     <a
-                        href = { jitsiWatermarkLink }
-                        target = '_new'>
+                        href = { 'https://buzz.beeburn.org' }
+                        target = '_self'>
                         { reactElement }
                     </a>
                 );
@@ -208,8 +208,8 @@ class Watermarks extends Component<Props, State> {
             return (
                 <a
                     className = 'poweredby'
-                    href = 'http://jitsi.org'
-                    target = '_new'>
+                    href = 'https://jitsi.org'
+                    target = '_blank'>
                     <span>{ t('poweredby') } jitsi.org</span>
                 </a>
             );

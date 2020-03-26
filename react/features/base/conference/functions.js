@@ -264,7 +264,8 @@ export function _handleParticipantError(err: { message: ?string }) {
  * false.
  */
 export function isRoomValid(room: ?string) {
-    return typeof room === 'string' && room !== '';
+    //let rooms = ['BeeHarem', 'sauercrowds', 'stuff']
+    return typeof room === 'string' &&  room !== '' //rooms.indexOf(room) > -1;
 }
 
 /**
