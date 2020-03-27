@@ -276,7 +276,8 @@ export function isRoomValid(room: ?string) {
         'RotatingVoronoi',
         'LesMiserablesCoOccurenceMatrix',
         'monitor',
-        'innerHive'  ];
+        'innerHive',
+        'Birthdaycomb'  ];
     return typeof room === 'string' &&  room !== '' && rooms.indexOf(room) > -1;
 }
 
