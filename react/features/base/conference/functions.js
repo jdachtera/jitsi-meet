@@ -274,7 +274,9 @@ export function isRoomValid(room: ?string) {
         'MapProjectionTransisitions',
         'Sauercrowdfunding',
         'RotatingVoronoi',
-        'LesMiserablesCoOccurenceMatrix'  ];
+        'LesMiserablesCoOccurenceMatrix',
+        'monitor',
+        'innerHive'  ];
     return typeof room === 'string' &&  room !== '' && rooms.indexOf(room) > -1;
 }
 
