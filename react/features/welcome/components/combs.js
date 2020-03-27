@@ -1,34 +1,44 @@
 export const combs = [
     {
         title: 'Bee Harem',
-        img: 'https://pbs.twimg.com/media/CX_6lyMWwAAiGQu.jpg'
+        img: 'https://pbs.twimg.com/media/CX_6lyMWwAAiGQu.jpg',
+        path: 'BeeHarem'
     },
     {
-        title: 'Factorisation Diagrams'
+        title: 'Factorisation Diagrams',
+        path: 'FactorisationDiagrams'
     },
     {
-        title: 'Phylogenetic Tree of Life'
-    },
-
-    {
-        title: 'Geographic Clipping'
-    },
-    {
-        title: 'L*a*b* and HCL color spaces'
-    },
-    { title: 'Treemap' },
-
-    {
-        title: 'Map Projection Transitions'
+        title: 'Phylogenetic Tree of Life',
+        path: 'PhylogeneticTreeOfLife'
     },
 
     {
-        title: 'Across U.S. Companies, Tax Rates Vary Greatly'
+        title: 'Geographic Clipping',
+        path: 'GeographicClipping'
     },
     {
-        title: 'Rotating Voronoi'
+        title: 'L*a*b* and HCL color spaces',
+        path: 'LABAndHCLColorSpaces'
+    },
+    { title: 'Treemap',
+      path: 'Treemap' },
+
+    {
+        title: 'Map Projection Transitions',
+        path: 'MapProjectionTransisitions'
+    },
+
+    {
+        title: 'Sauercrowdfunding',
+        path:'Sauercrowdfunding'
     },
     {
-        title: 'Les Misérables Co-occurrence Matrix'
+        title: 'Rotating Voronoi',
+        path: 'RotatingVoronoi'
+    },
+    {
+        title: 'Les Misérables Co-occurrence Matrix',
+        path: 'LesMiserablesCoOccurenceMatrix'
     }
 ];

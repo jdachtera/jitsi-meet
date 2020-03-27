@@ -164,7 +164,7 @@ const renderTheHive = async function() {
                     d.comb &&
                     d.comb.title &&
                     `${location.origin}/${encodeURI(
-                        d.comb.title.replace(' ', '')
+                        d.comb.path.replace(' ', '')
                     )}`
                 );
             })
