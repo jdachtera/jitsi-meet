@@ -159,6 +159,7 @@ const renderTheHive = async function() {
                 return 'channel-frame';
             })
             .attr('xlink:href', function(d) {
+                if(d.comb.path !== ''){
                 return (
                     d &&
                     d.comb &&
@@ -167,6 +168,14 @@ const renderTheHive = async function() {
                         d.comb.path.replace(' ', '')
                     )}`
                 );
+                } else {
+                    return (
+                        d &&
+                        d.comb &&
+                        d.comb.title &&
+                        d.comb.url
+                    );  
+                }
             })
             .attr('xlink:title', function(d) {
                 return d && d.comb && d.comb.title;

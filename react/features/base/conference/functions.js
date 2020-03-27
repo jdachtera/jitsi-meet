@@ -265,20 +265,15 @@ export function _handleParticipantError(err: { message: ?string }) {
  */
 export function isRoomValid(room: ?string) {
     let rooms = [
-        'BeeHarem', 
-        'FactorisationDiagrams', 
-        'PhylogeneticTreeOfLife',
-        'GeographicClipping',
-        'LABAndHCLColorSpaces',
-        'Treemap',
-        'MapProjectionTransisitions',
-        'Sauercrowdfunding',
-        'RotatingVoronoi',
-        'LesMiserablesCoOccurenceMatrix',
+        'Cabaret', 
+        'MadHoney', 
+        'TrollInn',
+        'Campfire',
+        'ImmediacyRoom',
+        'SacredSpace',
         'monitor',
         'innerHive',
-        'Birthdaycomb',
-        'stresstest'  ];
+          ];
     return typeof room === 'string' &&  room !== '' && rooms.indexOf(room) > -1;
 }
 

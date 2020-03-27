@@ -1,44 +1,38 @@
 export const combs = [
     {
-        title: 'Bee Harem',
+        title: 'Mad Honey',
         img: 'https://pbs.twimg.com/media/CX_6lyMWwAAiGQu.jpg',
-        path: 'BeeHarem'
+        path: 'MadHoney'
     },
     {
-        title: 'Factorisation Diagrams',
-        path: 'FactorisationDiagrams'
+        title: 'Cabaret',
+        path: 'Cabaret'
     },
     {
-        title: 'Phylogenetic Tree of Life',
-        path: 'PhylogeneticTreeOfLife'
-    },
-
-    {
-        title: 'Geographic Clipping',
-        path: 'GeographicClipping'
-    },
-    {
-        title: 'L*a*b* and HCL color spaces',
-        path: 'LABAndHCLColorSpaces'
-    },
-    { title: 'Treemap',
-      path: 'Treemap' },
-
-    {
-        title: 'Map Projection Transitions',
-        path: 'MapProjectionTransisitions'
+        title: 'the Troll Inn',
+        path: 'TrollInn'
     },
 
     {
-        title: 'Sauercrowdfunding',
-        path:'Sauercrowdfunding'
+        title: 'the Campfire',
+        path: 'Campfire'
     },
     {
-        title: 'Rotating Voronoi',
-        path: 'RotatingVoronoi'
+        title: 'Immediacy Room',
+        path: 'ImmediacyRoom'
+    },
+    { title: 'The Pollinator',
+      url: 'https://twitch.tv',
+       path: '' 
     },
     {
-        title: 'Les Misérables Co-occurrence Matrix',
-        path: 'LesMiserablesCoOccurenceMatrix'
+        title: 'Strange Bees from Outer Space',
+        url: 'https://www.zoom.us',
+        path:''
+    },
+    {
+        title: 'Hive Playa',
+        url: 'https://www.zoom.us',
+        path:''
     }
 ];
