@@ -115,6 +115,10 @@ form {
 .leftwatermark {
     left: 32px;
     top: 32px;
+    width: $watermarkWidth;
+    height: $watermarkHeight;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-image: url($defaultWatermarkLink);
     background-position: center left;
 }
@@ -122,6 +126,10 @@ form {
 .rightwatermark {
     right: 32px;
     top: 32px;
+    width: $watermarkWidth;
+    height: $watermarkHeight;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center right;
 }
 
