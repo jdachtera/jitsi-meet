@@ -64,7 +64,8 @@ import {
     commonUserJoinedHandling,
     commonUserLeftHandling,
     getCurrentConference,
-    sendLocalParticipant
+    sendLocalParticipant,
+    isRoomValid
 } from './functions';
 import logger from './logger';
 
@@ -415,6 +416,10 @@ export function createConference() {
 
         if (!room) {
             throw new Error('Cannot join a conference without a room name!');
+        }
+        if(!isRoomValid(room))
+        {
+            return;
         }
 
         const config = state['features/base/config'];
