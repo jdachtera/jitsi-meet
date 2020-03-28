@@ -95,6 +95,7 @@ $beehive-window-size: 250px;
     position: absolute;
     bottom: 25px;
     left: calc(50% - #{$beehive-window-size});
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
 
 #beehive-container {

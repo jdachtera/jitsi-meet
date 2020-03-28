@@ -104,7 +104,7 @@ const renderTheHive = async function() {
             context.lineTo(x, y);
         }
 
-        context.clip();
+        //context.clip();
         context.drawImage(
             image,
             -imageWidth / 2,
