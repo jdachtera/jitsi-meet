@@ -264,17 +264,42 @@ export function _handleParticipantError(err: { message: ?string }) {
  * false.
  */
 export function isRoomValid(room: ?string) {
-    let rooms = [
-        'Cabaret', 
-        'MadHoney', 
+    const rooms = [
+        'Cabaret',
+        'MadHoney',
         'TrollInn',
         'Campfire',
         'ImmediacyRoom',
         'SacredSpace',
         'monitor',
         'innerHive',
-          ];
-    return typeof room === 'string' &&  room !== '' && rooms.indexOf(room) > -1;
+        'Glitch',
+        'The Ashram of Lost Burners',
+        'ShibariSecrets',
+        'EyeGaze1',
+        'EyeGaze2',
+        'EyeGaze3',
+        'EyeGaze4',
+        'EyeGaze5',
+        'EyeGaze6',
+        'EyeGaze7',
+        'EyeGaze8',
+        'EyeGaze9',
+        'EyeGaze10',
+        'EyeGaze11',
+        'EyeGaze12',
+        'EyeGaze13',
+        'EyeGaze14',
+        'EyeGaze15',
+        'EyeGaze16',
+        'EyeGaze17',
+        'EyeGaze18',
+        'EyeGaze19',
+        'EyeGaze20'
+    ];
+
+
+    return typeof room === 'string' && room !== '' && rooms.indexOf(room) > -1;
 }
 
 /**
