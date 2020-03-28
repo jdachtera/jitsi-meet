@@ -51,5 +51,11 @@ export const combs = [
         img: '../images/kosmozoo.jpg',
         path:'',
         url: 'https://www.twitch.tv/ksomozoo'
+    },
+    {
+        title: 'Burning Disco Lovers',
+        img: '../images/dico_lovers.png',
+        path:'',
+        url: 'https://zoom.us/j/335670997'
     }
 ];
