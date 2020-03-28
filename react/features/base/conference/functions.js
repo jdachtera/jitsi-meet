@@ -273,6 +273,7 @@ export function isRoomValid(room: ?string) {
         'SacredSpace',
         'monitor',
         'innerHive',
+        'Divine Session',
         'Glitch',
         'The Ashram of Lost Burners',
         'ShibariSecrets',
@@ -295,7 +296,10 @@ export function isRoomValid(room: ?string) {
         'EyeGaze17',
         'EyeGaze18',
         'EyeGaze19',
-        'EyeGaze20'
+        'EyeGaze20',
+        'SecretBackup144',
+        'SecretBackup188',
+        'SecretBackup247'
     ];
 
 
