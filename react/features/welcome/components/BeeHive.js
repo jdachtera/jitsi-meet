@@ -25,7 +25,7 @@ const renderTheHive = async function() {
         imageWidth = 132,
         imageHeight = 152,
         radius = 75,
-        depth = 6;
+        depth = 3;
 
     var currentFocus = [window.innerWidth / 2, height / 2],
         desiredFocus,
