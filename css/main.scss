@@ -89,11 +89,11 @@ $flagsImagePath: '../images/';
 
 /* Modules END */
 
-$beehive-window-size: 250px;
+$beehive-window-size: 500px;
 
 #beehive-wrapper {
     position: absolute;
-    bottom: 25px;
+    bottom: 100px;
     left: calc(50% - #{$beehive-window-size});
    
 }
