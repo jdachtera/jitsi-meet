@@ -21,10 +21,10 @@ const renderTheHive = async function() {
         d.j = (i / 10) | 0;
     });
 
-    var height = 500,
+    var height = 600,
         imageWidth = 132,
         imageHeight = 152,
-        radius = 75,
+        radius = 100,
         depth = 6;
 
     var currentFocus = [window.innerWidth / 2, height / 2],
