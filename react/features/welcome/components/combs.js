@@ -25,9 +25,10 @@ export const combs = [
         path: 'ImmediacyRoom',
         img: '../images/immidiacy.png'
     },
-    { title: 'The Pollinator',
-      url: 'https://twitch.tv',
-       img: '../images/Pollinator.jpg' 
+    {  title: 'The Pollinator',
+       url: 'https://twitch.tv',
+       img: '../images/Pollinator.jpg',
+       path:'' 
     },
     {
         title: 'Vagabonds',
