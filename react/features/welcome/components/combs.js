@@ -25,37 +25,37 @@ export const combs = [
         path: 'ImmediacyRoom',
         img: '../images/immidiacy.png'
     },
-    {  title: 'The Pollinator',
-       img: '../images/Pollinator.jpg',
-       path:'ThePollinator' 
+    { title: 'The Pollinator',
+        img: '../images/Pollinator.jpg',
+        path: 'ThePollinator'
     },
     {
         title: 'Vagabonds',
         url: ' https://zoom.us/j/108160626',
-        path:'',
+        path: '',
         img: '../images/vagabonds.png'
     },
     {
         title: 'Hive Playa',
         url: 'https://zoom.us/j/988190716',
-        path:'',
+        path: '',
         img: '../images/Playa.jpg'
     },
     {
         title: 'Sacred Space',
         img: '../images/sacred_space.jpg',
-        path:'SacredSpace'
+        path: 'SacredSpace'
     },
     {
         title: 'Kosmo Zoo',
         img: '../images/kosmozoo.jpg',
-        path:'',
-        url: 'https://www.twitch.tv/ksomozoo'
+        path: '',
+        url: 'https://www.twitch.tv/kosmozoo'
     },
     {
         title: 'Burning Disco Lovers',
         img: '../images/disco_lovers.png',
-        path:'',
+        path: '',
         url: 'https://zoom.us/j/335670997'
     }
 ];
