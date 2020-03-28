@@ -7,7 +7,7 @@ export const combs = [
     {
         title: 'Cabaret',
         path: 'Cabaret',
-        img: '../images/cabaret.jpg'
+        img: '../images/Cabaret.jpg'
     },
     {
         title: 'the Troll Inn',
