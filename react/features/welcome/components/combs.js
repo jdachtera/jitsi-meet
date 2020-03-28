@@ -54,7 +54,7 @@ export const combs = [
     },
     {
         title: 'Burning Disco Lovers',
-        img: '../images/dico_lovers.png',
+        img: '../images/disco_lovers.png',
         path:'',
         url: 'https://zoom.us/j/335670997'
     }
