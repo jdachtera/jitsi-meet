@@ -275,6 +275,7 @@ export function isRoomValid(room: ?string) {
         'innerHive',
         'DivineSession',
         'Glitch',
+        'ThePollinator',
         'TheAshramofLostBurners',
         'ShibariSecrets',
         'EyeGaze1',

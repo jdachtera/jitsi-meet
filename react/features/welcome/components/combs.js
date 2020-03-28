@@ -26,9 +26,8 @@ export const combs = [
         img: '../images/immidiacy.png'
     },
     {  title: 'The Pollinator',
-       url: 'https://twitch.tv',
        img: '../images/Pollinator.jpg',
-       path:'' 
+       path:'ThePollinator' 
     },
     {
         title: 'Vagabonds',
@@ -51,6 +50,6 @@ export const combs = [
         title: 'Kosmo Zoo',
         img: '../images/kosmozoo.jpg',
         path:'',
-        url: 'https://www.twitch.tv'
+        url: 'https://www.twitch.tv/ksomozoo'
     }
 ];
