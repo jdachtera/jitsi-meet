@@ -1,7 +1,7 @@
 export const combs = [
     {
         title: 'Mad Honey',
-        img: '.../images/mad_honey.jpg',
+        img: '../images/mad_honey.jpg',
         path: 'MadHoney'
     },
     {
@@ -27,7 +27,7 @@ export const combs = [
     },
     { title: 'The Pollinator',
       url: 'https://twitch.tv',
-       path: '../images/Pollinator.jpg' 
+       img: '../images/Pollinator.jpg' 
     },
     {
         title: 'Vagabonds',
